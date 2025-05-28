@@ -7,8 +7,8 @@
 
 **基本要求：**
 (1) 训练集测试集按照 [Caltech-101]( [https://data.caltech.edu/records/mzrjq-6wc02Links to an external site.](https://data.caltech.edu/records/mzrjq-6wc02)) 标准；  
-(2) 修改现有的 CNN 架构（如 AlexNet, ResNet-18）用于 Caltech $\textendash 101$ 识别，通过将其输出层大小设置为 $101$ 以适应数据集中的类别数量，其余层使用在ImageNet上预训练得到的网络参数进行初始化；  
-(3) 在  Caltech$\textendash 101$ 数据集上从零开始训练新的输出层，并对其余参数使用较小的学习率进行微调；  
+(2) 修改现有的 CNN 架构（如 AlexNet, ResNet-18）用于 Caltech $\textendash 101$ 识别，通过将其输出层大小设置为 101 以适应数据集中的类别数量，其余层使用在ImageNet上预训练得到的网络参数进行初始化；  
+(3) 在  Caltech $\textendash 101$ 数据集上从零开始训练新的输出层，并对其余参数使用较小的学习率进行微调；  
 (4) 观察不同的超参数，如训练步数、学习率，及其不同组合带来的影响，并尽可能提升模型性能；  
 (5) 与仅使用 Caltech $\textendash 101$ 数据集从随机初始化的网络参数开始训练得到的结果 **进行对比**，观察预训练带来的提升。
   
